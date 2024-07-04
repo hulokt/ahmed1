@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Nakhla Residential Resort</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            background: linear-gradient(135deg, #474747, #060504);
+        }
+
+        /* Header styles */
+        header {
+            margin-top: 10px;
+            backdrop-filter: blur(10px);
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            transition: top 0.3s; /* Smooth transition for hiding and showing */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .brand a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .navbar nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .navbar nav ul li {
+            margin: 0 15px;
+        }
+
+        .navbar nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1em;
+            transition: all ease 0.3s;
+        }
+
+        .navbar nav ul li a:hover {
+            color: #007bff;
+        }
+
+        /* Content section styles */
+        .content {
+            margin-top: 100px; /* Adjust based on your header's height */
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .content img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        .content .text {
+            width: 100%;
+            text-align: left;
+            margin: 20px 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .content .text h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .content .text h2, .content .text h3 {
+            margin-top: 20px;
+        }
+
+        .content .text p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+
+        .media_buttons .link {
+            height: 100%;
+            width: 100%;
+            max-width: 34px;
+            max-height: 34px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 18px;
+            margin: 0 8px;
+            background-color: #007bff;
+            text-decoration: none;
+            padding: 4px;
+        }
+
+        .media_buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        @media (min-width: 768px) {
+            .content {
+                flex-direction: row;
+            }
+
+            .content img {
+                width: 50%;
+                margin-right: 20px;
+                margin-top: 140px;
+                border: solid;
+                border-color: #ffffff;
+            }
+
+            .content .text {
+                width: 50%;
+                margin-right: 80px;
+            }
+
+            footer {
+                background-color: #1f1f1f;
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .media_buttons {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .media_buttons .link {
+                margin: 8px 5;
+            }
+
+            .content img {
+                margin: 20px 0;
+            }
+
+            .content .text {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="navbar">
+            <div class="brand">
+                <a href="http://127.0.0.1:5500/index.html#projects" style="font-size: larger;">MyPortfolio</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/index.html#projects">About</a></li>
+                    <li><a href="http://127.0.0.1:5500/index.html#projects">Projects</a></li>
+                    <li><a href="http://127.0.0.1:5500/index.html#projects">Certificates</a></li>
+                    <li><a href="http://127.0.0.1:5500/index.html#projects">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="text">
+            <div class="title" style="margin-top: 100px;">
+                <h1 style="font-family: 'Poppins', sans-serif;">Riyadh Boulevard World Sphere</h1>
+            </div>
+            <p>The Riyadh Boulevard World Sphere is a stunning architectural marvel located in the heart of Riyadh, Saudi Arabia. This iconic structure is known for its modern design and innovative construction techniques, making it a must-visit destination for tourists and architecture enthusiasts alike.</p>
+            <p>One of the most striking features of the World Sphere is its spherical shape, which symbolizes unity and inclusivity. The exterior is adorned with intricate patterns and state-of-the-art lighting, creating a mesmerizing visual experience, especially at night. Inside, the sphere houses a variety of attractions, including immersive exhibitions, luxury retail stores, and fine dining restaurants, offering visitors a unique blend of culture, entertainment, and luxury.</p>
+            <p>Whether you are an architecture aficionado or simply looking for a new place to explore, the Riyadh Boulevard World Sphere promises an unforgettable experience that showcases the best of Saudi Arabian design and hospitality.</p> 
+        </div>
+        <img src="circle.webp" alt="Riyadh Boulevard World Sphere">
+    </div>
+
+    <section id="contact" class="contact">
+        <div style="display: flex; justify-content: center;">
+            <h2>Contact</h2>
+        </div>
+        <div style="display: flex; justify-content: center; margin: 20px;">
+            <div class="media_buttons">
+                <a href="https://www.facebook.com/ahmed.hegazy.9619934?mibextid=LQQJ4d" target="_blank" class="link" style="background: #4267b2;">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL5JREFUSEvtlMENwjAMRb83YRRGoZNQJqGbUCaBTT58KZFyKHaKErWH5tJGjfycZ7uGzss6x8e+ACRPAK4AzgD0/v4+JzO7/TJRfYMU/LUQSIChBUCZjz0Bj6RGjBnAYGZS5K41iqRH3rVGz3tJ/Beg7Kcoe313ASRzt+jsvQio4M+0nz1VEUBBL0Gmrq4WAFdXBMhDpUuowLnI6p7cQW43bVvk0j3Jsk3bdNEBCAftULRKUc2PbelM9aDtFvABzQhgGXbMk9AAAAAASUVORK5CYII="/>
+                </a>
+                <a href="https://www.linkedin.com/in/ahmed-hegazy-7406381a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="link" style="background: #0077b5;">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPZJREFUSEvtlUEOAUEQRf+/CRZcg5tYSywkLuAAEpFYcxNzDAuJcRGfkjHpbkNLNxaidjM99V/Vr64M8eHgh/VxB5DUAXAiWb4D7gEkLQGMK+E5yWkupAZI6gHYBYItksccSAzQzrUqtGgFYFRVvCA5yanecpuG3K2GvM8VvwNIarmiN3si7/sASpJFU0GhRQcAN4gltS1J0haACVnY9R0AsG/dsPcbkjOvSPdB0qsAr9MANHC7SekgNpqCpHV4jVRALSJpCGDtUGtrcwDefjyyNhlwGWTYuXsJ4J4nWfQHxBbN87hhEX95BrEVTTn//k8/pcpnOWcDcsYZyOTS7QAAAABJRU5ErkJggg=="/>
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=eng.ahmed.m.hegazy2020@gmail.com" target="_blank" class="link" style="background: #b6554e;">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPlJREFUSEvtVVEOgjAMfe8mehM5iXoS8STqSeQmcpPKI4w0Y2YDQuIHTcgyaPu611dGbGzcOD92gCzDI0VmdgLwBtACeJK8Z6Odg5ndum0dx3uAT5f44GLqUhAzU2EqMFhL8qiNB7BExTpNRVLrxMxMBSm5L6z364rrc+cA5JOkzMwuAB6/aJwDEHKMlCUomeAsAQin0TqhJEZYClAsrBKA56CMXLXqkR6voqImS9MvANK3GpqyhmTlZmD0KTlB39RBiudhiDyIb3oYsvkAIcJpXq+uJBv3bT2AkgkkNXSrKCqRzd8AxDzO+dnFseqRZL7faHkJbH7pfwF0IJMZUAUzPwAAAABJRU5ErkJggg=="/>
+                </a>
+                <a href="https://www.instagram.com/marwan202001?igsh=M3pjODV0M2JwZms0" target="_blank" class="link" style="background: #f10c9d;">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYxJREFUSEvFVUFOAzEMHH+Ca9uXQC/ceQCCvoRWPITtMzgBL6Fw4dwXmJ3IidwkXVyhqpEqdbWOZzweewVnPnLm/LgMgKrOATwAuLHfsUJ39uIdwEZE8nOJbypQ1UcALxbBC7w8dUiGRBg7iMjGBx8AGPNPJhWRZbQ/du/N4lciUkjVAGTOCha9cmtAVb2nNAD2AO5GWRtyNQADdj32Jt1slIGSfIjIoKq3AF4BfIvITFVTFf5+DaCm4yqztfJZGXX2h5o/A/gBcCUiWwOYj/8XOTACQFZMvmYDncPWVm1JpqpJ4jGu5J0EcI5KyT19926ZmxoFKMnyhV7TneOa+L8q8BeeKM0xV6kqe/YvAGrPHvQkyuD0/UD5ohJxGpOLnINozTSlVZMPBvJkgAqkZ1M2uOyfCEAzKA6EANe2c76yLJWzmkHtrQomOmAW2UnOVUXiNNUVA2qdWJwCUk17mYsGwOTI69rv+si6ZkxxVHdVVPuHNsy7fgogfzO2fk1PAkQ0j8Zc5pscZReJ+wVuT/sZ0lLoiAAAAABJRU5ErkJggg=="/>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MyPortfolio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let lastScrollTop = 0;
+        window.addEventListener("scroll", function() {
+            const header = document.getElementById("header");
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                // Scroll down
+                header.style.top = "-80px"; // Adjust based on your header's height
+            } else {
+                // Scroll up
+                header.style.top = "0";
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+</html>
